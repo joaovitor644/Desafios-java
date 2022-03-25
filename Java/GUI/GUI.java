@@ -20,8 +20,8 @@ public class GUI implements ActionListener {
     public GUI(){
         win.getWindow().add(in1.getInput());
         win.getWindow().add(in2.getInput());
-        win.getWindow().add(lab2.getLabel());
         win.getWindow().add(lab3.getLabel());
+        win.getWindow().add(lab2.getLabel());
         win.getWindow().add(b1.btm);
         win.getWindow().add(lab1.getLabel()); 
         lab1.getLabel().setHorizontalAlignment(JLabel.CENTER);
