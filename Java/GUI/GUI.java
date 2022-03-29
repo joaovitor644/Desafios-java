@@ -8,7 +8,7 @@ import lib.Input;
 import lib.Label;
 import lib.Window;
 
-public class GUI implements ActionListener {
+public class M2 implements ActionListener {
     int i = 0;
     Button b1 = new Button("Click",200,50,122,250);
     Label lab2 = new Label("Numero 1", 150, 50, 20, 103);
@@ -16,8 +16,8 @@ public class GUI implements ActionListener {
     Input in1 = new Input(200,20,122,122);
     Input in2 = new Input(200,20,122,82);
     Window win = new Window(450,450,"My title");
-    Label lab1 = new Label("This is a label",450,20,0,375);
-    public GUI(){
+    Label lab1 = new Label("This is a result",450,20,0,375);
+    public M2(){
         win.getWindow().add(in1.getInput());
         win.getWindow().add(in2.getInput());
         win.getWindow().add(lab3.getLabel());
@@ -28,7 +28,7 @@ public class GUI implements ActionListener {
         b1.btm.addActionListener(this);
     }
     public static void main(String[] args){
-        new GUI();
+        new M2();
     }
     @Override
     public void actionPerformed(ActionEvent e) {

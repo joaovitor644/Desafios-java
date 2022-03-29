@@ -1,10 +1,8 @@
 package lib;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Window implements ActionListener{
+
+public class Window {
     private JFrame window;
 
     public JFrame getWindow(){
@@ -20,12 +18,4 @@ public class Window implements ActionListener{
         this.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.window.setVisible(true);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == javax.swing.JButton.class){
-             System.out.println("Funcionou PORRA");
-        }
-       
-    }    
 }
